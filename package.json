@@ -9,7 +9,7 @@
     "test": "jest"
   },
   "repository": {
-    "url": "https://github.com/thong865/laotele"
+    "url": "git+https://github.com/thong865/laotele.git"
   },
   "keywords": [
     "singhasoft",
