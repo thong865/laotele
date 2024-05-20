@@ -8,6 +8,9 @@
     "build": "tsc -p .",
     "test": "jest"
   },
+  "repository": {
+    "url": "https://github.com/thong865/laotele"
+  },
   "keywords": [
     "singhasoft",
     "Lao telephone",
