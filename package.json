@@ -21,6 +21,9 @@
   ],
   "author": "singha.soft",
   "license": "MIT",
+  "publishConfig": {
+    "@singha.soft:registry": "https://npm.pkg.github.com"
+  },
   "files": [
     "lib",
     "LICENSE",
