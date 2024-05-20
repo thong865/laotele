@@ -1,6 +1,6 @@
 {
   "name": "lao-tele",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Lao Telecome number Validator package",
   "main": "lib/index.js",
   "types": "lib",
