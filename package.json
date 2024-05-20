@@ -22,7 +22,7 @@
   "author": "singha.soft",
   "license": "MIT",
   "publishConfig": {
-    "@thong865:registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "files": [
     "lib",
