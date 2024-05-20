@@ -1,5 +1,5 @@
 {
-  "name": "@singha.soft/lao-tele",
+  "name": "lao-tele",
   "version": "0.1.1",
   "description": "Lao Telecome number Validator package",
   "main": "lib/index.js",
@@ -22,7 +22,7 @@
   "author": "singha.soft",
   "license": "MIT",
   "publishConfig": {
-    "@singha.soft:registry": "https://npm.pkg.github.com"
+    "@thong865:registry": "https://npm.pkg.github.com"
   },
   "files": [
     "lib",
