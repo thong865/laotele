@@ -11,6 +11,9 @@
   "repository": {
     "url": "git+https://github.com/thong865/laotele.git"
   },
+  "bugs": {
+    "url": "https://github.com/thong865/laotele/issues"
+  },
   "keywords": [
     "singhasoft",
     "Lao telephone",
