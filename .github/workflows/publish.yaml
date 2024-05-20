@@ -9,7 +9,7 @@ jobs:
             - name: checkout
               uses: actions/checkout@v4
             - name: node
-              uses: actions/checkout@v4.2.0
+              uses: actions/checkout@v4
               with:
                   node-version: 20.13.0
                   registry-url: https://registry.npmjs.org
