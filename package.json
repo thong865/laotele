@@ -1,5 +1,5 @@
 {
-  "name": "lao-tele",
+  "name": "@singha.soft/lao-tele",
   "version": "0.1.1",
   "description": "Lao Telecome number Validator package",
   "main": "lib/index.js",
