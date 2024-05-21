@@ -9,12 +9,11 @@ class laoTelValidate {
             throw new Error(`${n} is include alpha`)
         }
     }
-    isTelnumberFormat(n: string) {
-        if (isRegInputNumber.test(n)) {
-            return isRegInputNumber.test(n)
-        } else {
+    isTelnumberFormat(n: string): string {
+        if (!isRegInputNumber.test(n)) {
             throw new Error(`${n} is not lao telephone`)
         }
+        return n
     }
     isMobileNumberFormat(n: string) {
         if (isRegInputNumber.test(n)) {

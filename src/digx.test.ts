@@ -1,4 +1,5 @@
 import laotele from "./index";
+
 describe("Add Null | Emtype String | space input", () => {
   test("input null paramiter", () => {
     expect(laotele(null)).toBe(undefined);
@@ -10,7 +11,7 @@ describe("Add Null | Emtype String | space input", () => {
     expect(laotele('')).toBe(undefined);
   });
   test("input spacing paramiter", () => {
-    expect(laotele( )).toBe(undefined);
+    expect(laotele()).toBe(undefined);
   });
 });
 describe("Telecome Laos Number 2,5,7,8,9", () => {
@@ -35,4 +36,13 @@ describe("Telecome Laos Number 2,5,7,8,9", () => {
   test("Telecome format number 8 digit", () => {
     expect(laotele("55057246")).toBe("55057246");
   });
+  test("Telecome format number 8 digit", () => {
+    expect(laotele("55057246").tt()).toBe("55057246");
+  });
+});
+// Test Input Error
+describe("Input not start with 2,5,7,8,9", () => {
+  test('Mobile number with 020 not in (2,5,7,8,9) and 8 digit',()=> {
+    expect(()=> laotele("02065057246")).toThrowError(`02065057246 is not lao telephone`);
+  })
 });
