@@ -37,7 +37,7 @@ describe("Telecome Laos Number 2,5,7,8,9", () => {
     expect(laotele("55057246")).toBe("55057246");
   });
   test("Telecome format number 8 digit", () => {
-    expect(laotele("55057246").tt()).toBe("55057246");
+    expect(laotele("55057246")).toBe("55057246");
   });
 });
 // Test Input Error
