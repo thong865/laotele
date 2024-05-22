@@ -3,9 +3,13 @@
 # laotele
 
 [![NPM Version][npm-version-image]][npm-url]
+
 [![NPM Downloads][npm-downloads-image]][npm-url]
+
 [![Node.js Version][node-image]][node-url]
+
 [![Build Status][ci-image]][ci-url]
+
 [![Test Coverage][coveralls-image]][coveralls-url]
 
 ## Installing
