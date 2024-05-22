@@ -40,9 +40,36 @@ describe("Telecome Laos Number 2,5,7,8,9", () => {
     expect(laotele("55057246")).toBe("55057246");
   });
 });
+
+describe("Get Country Code", () => {
+  test('Mobile number with 020 in (2,5,7,8,9) and 8 digit type 1', () => {
+    expect(laotele("02055555555").countryCode()).toBe('8562055555555');
+  })
+  test('Mobile number in (2,5,7,8,9) and 8 digit type 2', () => {
+    expect(laotele("55555555").countryCode()).toBe('8562055555555');
+  })
+  test('Mobile number with 030 in (2,5,7,8,9) and 7 digit type 1', () => {
+    expect(laotele("0305555555").countryCode()).toBe('856305555555');
+  })
+  test('Mobile number in (2,5,7,8,9) and 7 digit type 2', () => {
+    expect(laotele("5555555").countryCode()).toBe('856305555555');
+  })
+  test('Mobile Transform with Internal Phone code', () => {
+    expect(laotele("02055555555").countryCode({ internal: true })).toBe('2055555555');
+  })
+  test('Mobile Transform with Internal Phone code zero start', () => {
+    expect(laotele("02055555555").countryCode({ internal: true, zerostart: true })).toBe('02055555555');
+  })
+  test('Mobile Transform with Internal Phone code', () => {
+    expect(laotele("0305555555").countryCode({ internal: true })).toBe('305555555');
+  })
+  test('Mobile Transform with Internal Phone code zero start', () => {
+    expect(laotele("0305555555").countryCode({ internal: true, zerostart: true })).toBe('0305555555');
+  })
+});
 // Test Input Error
 describe("Input not start with 2,5,7,8,9", () => {
-  test('Mobile number with 020 not in (2,5,7,8,9) and 8 digit',()=> {
-    expect(()=> laotele("02065057246")).toThrowError(`02065057246 is not lao telephone`);
+  test('Mobile number with 020 not in (2,5,7,8,9) and 8 digit', () => {
+    expect(() => laotele("02065057246")).toThrowError(`02065057246 is not lao telephone`);
   })
 });

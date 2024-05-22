@@ -1,28 +1,25 @@
-import { isRegInputNumber, isNumber } from "./configs";
+import { isRegInputNumber, isNumber } from "./helper/regx";
+
 class laoTelValidate {
     constructor(public n?: string) { }
 
     numberFormat(n: string): boolean {
-        if (isNumber.test(n)) {
-            return isNumber.test(n)
-        } else {
+        if (!isNumber.test(n)) {
             throw new Error(`${n} is include alpha`)
         }
+        return isNumber.test(n)
     }
-    isTelnumberFormat(n: string): string {
+    isTelnumberFormat(n: string): boolean {
         if (!isRegInputNumber.test(n)) {
             throw new Error(`${n} is not lao telephone`)
         }
-        return n
+        return isRegInputNumber.test(n)
     }
-    isMobileNumberFormat(n: string) {
-        if (isRegInputNumber.test(n)) {
-            return isRegInputNumber.test(n)
-        } else {
+    mobileNumberFormat(n: string): boolean {
+        if (!isRegInputNumber.test(n)) {
             throw new Error(`${n} is not lao telephone`)
         }
+        return isRegInputNumber.test(n)
     }
 }
-
-
 export default laoTelValidate
