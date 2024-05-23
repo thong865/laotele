@@ -74,20 +74,10 @@ console.log(laotele('55555555').extractPhone({internal:true,zerostart:true})) /*
 
 
 
-
 |API | Options | Description |
-|`.countryCode()` | `Object`. 
-- `internal`: `false|true` and default is false. 
-
--  `zerostart`: `false|true` and default is false  | `countryCode` make transform return with phone country code of Laos like 85620 or 85630.
--  `internal` is optional of `countryCode` to transform return internal phone code like `20xxxxxxxx | 30xxxxxxx` . by defual is `false`.
--  `zerostart` is optional of `countryCode` use it together  `internal`. it's option to return internal phone code like `020xxxxxxxx | 030xxxxxxx`|
-|`.extractPhone()` | `Object`. 
-- `internal`: `false|true` and default is false. 
-
--  `zerostart`: `false|true` and default is false  | `internal` make transform and extract phone number with country code, internal code and phone number of Laos like `{ccode:'85620' | '85630', incode: '20'|'30',dial: '55555555'}`
--  `zerostart` is optional of `extractPhone` to add `0` to internal code like: `020 | 030` |
-
+|---|---|---|
+|`.countryCode()` | `Object`. <br/> - `internal`: false or true and default is false.  <br/> -  `zerostart`: false or true and default is false  | `countryCode` make transform return with phone country code of Laos like 85620 or 85630. <br/> -  `internal` is optional of `countryCode` to transform return internal phone code like `20xxxxxxxx or 30xxxxxxx` . by defual is `false`. <br/> <br/> - `zerostart` is optional of `countryCode` use it together  `internal`. it's option to return internal phone code like `020xxxxxxxx or 030xxxxxxx`|
+|`.extractPhone()` | `Object`. <br/> - `internal`: `false or true` and default is false. <br/> - `zerostart`: `false or true` and default is false  | - `internal` make transform and extract phone number with country code, internal code and phone number of Laos like `{ccode:'85620' or '85630', incode: '20' or '30',dial: '55555555'}` <br/> <br/> -  `zerostart` is optional of `extractPhone` to add `0` to internal code like: `020 or 030` |
 
 
 ## License
