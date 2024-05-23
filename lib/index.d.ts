@@ -1,7 +1,3 @@
-import './helper/ccode';
-interface Options {
-    format?: string;
-}
-declare function laotele(n?: any, options?: Options): any;
+import { laotele } from './laotele';
 export default laotele;
 //# sourceMappingURL=index.d.ts.map

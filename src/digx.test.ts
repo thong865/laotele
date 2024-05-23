@@ -66,6 +66,9 @@ describe("Get Country Code", () => {
   test('Mobile Transform with Internal Phone code zero start', () => {
     expect(laotele("0305555555").countryCode({ internal: true, zerostart: true })).toBe('0305555555');
   })
+  test('Mobile extraction', () => {
+    expect(laotele("0305555555").extractPhone()).toStrictEqual({ code: "85630", incode: "30", dial: "5555555" });
+  })
 });
 // Test Input Error
 describe("Input not start with 2,5,7,8,9", () => {

@@ -1,4 +1,4 @@
-name: lao-tele
+name: Publish
 on: push
 
 jobs:

@@ -1,0 +1,26 @@
+name: 'Close Stale'
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'
+
+jobs:
+  stale:
+    permissions:
+      issues: write  # for actions/stale to close stale issues
+      pull-requests: write  # for actions/stale to close stale PRs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close Stale Issues
+        uses: actions/stale@v7
+        with:
+          repo-token: ${{ secrets.NPM_AUTH_TOKEN }}
+          stale-issue-message: |
+            Thanks.
+          stale-pr-message: |
+            Thanks.
+          stale-issue-label: 'status:stale'
+          stale-pr-label: 'status:stale'
+          only-labels: 'status:more info needed'
+          days-before-stale: 30
+          days-before-close: 14 
